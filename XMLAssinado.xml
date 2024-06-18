@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EnviarLoteRpsEnvio xmlns:ns3="http://www.ginfes.com.br/servico_enviar_lote_rps_envio_v03.xsd" xmlns:ns4="http://www.ginfes.com.br/tipos_v03.xsd">
+  <LoteRps Id="Lote_1">
+    <NumeroLote>1</NumeroLote>
+    <Cnpj>30911672000110</Cnpj>
+    <InscricaoMunicipal>264656</InscricaoMunicipal>
+    <QuantidadeRps>1</QuantidadeRps>
+    <ListaRps>
+      <Rps>
+        <InfRps Id="RPS_1">
+          <IdentificacaoRps>
+            <Numero>1</Numero>
+            <Serie>1</Serie>
+            <Tipo>1</Tipo>
+          </IdentificacaoRps>
+          <DataEmissao>2023-07-27T13:23:09</DataEmissao>
+          <NaturezaOperacao>1</NaturezaOperacao>
+          <RegimeEspecialTributacao>1</RegimeEspecialTributacao>
+          <OptanteSimplesNacional>2</OptanteSimplesNacional>
+          <IncentivadorCultural>2</IncentivadorCultural>
+          <Status>1</Status>
+          <Servico>
+            <Valores>
+              <ValorServicos>10.00</ValorServicos>
+              <ValorPis>0.00</ValorPis>
+              <ValorCofins>0.00</ValorCofins>
+              <ValorInss>0.00</ValorInss>
+              <ValorIr>0.00</ValorIr>
+              <ValorCsll>0.00</ValorCsll>
+              <IssRetido>1</IssRetido>
+              <ValorIss>0.20</ValorIss>
+              <BaseCalculo>10.00</BaseCalculo>
+              <Aliquota>0.0200</Aliquota>
+              <ValorLiquidoNfse>10.00</ValorLiquidoNfse>
+            </Valores>
+            <ItemListaServico>403</ItemListaServico>
+            <CodigoTributacaoMunicipio>403/100205/1141</CodigoTributacaoMunicipio>
+            <Discriminacao>TESTE</Discriminacao>
+            <CodigoMunicipio>3548708</CodigoMunicipio>
+          </Servico>
+          <Prestador>
+            <Cnpj>30911672000110</Cnpj>
+            <InscricaoMunicipal>264656</InscricaoMunicipal>
+          </Prestador>
+          <Tomador>
+            <IdentificacaoTomador>
+              <CpfCnpj>
+                <Cpf>70803332459</Cpf>
+              </CpfCnpj>
+            </IdentificacaoTomador>
+            <RazaoSocial>ANTONIO FAENZA</RazaoSocial>
+            <Endereco>
+              <Endereco>RUA TUIUTI</Endereco>
+              <Numero>928</Numero>
+              <Bairro>TATUAPE</Bairro>
+              <CodigoMunicipio>3550308</CodigoMunicipio>
+              <Uf>SP</Uf>
+              <Cep>03081015</Cep>
+            </Endereco>
+          </Tomador>
+        </InfRps>
+      </Rps>
+    </ListaRps>
+  </LoteRps>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#Lote_1">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+        <DigestValue>7lWQwU0xkiEFbVkgIsRGEKt32JHD0zHscihjE4EMmRM=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>eDwZD0FWxZtVUXSs5tlys91NOrNMVjNLYtdhkYLuM+8DMHjdjnA1ujziKbF2KyC6RHys3aQMa5JBXzKVr1A3htayoCEjz7uvnv50HOyG41Lb9OUiEndUtNRq+HDYGls6BGjhN1P++12nGntk2urlfnpVCsICu7lHwRzlSIgm3tOwtWfZQnPuuQssvOzK/UBbYtzrMNlzpqseRyjlkZRjcq4g9vXWJBa/xGK4djo0NVoqxefI0wt70qLYxggi6Y9j36M7c1MLS9a1GMXtyWuIbWLBhgYhsALLAxIIPA7+rw+FN7i8U/Ha4kNe00JeK4ZpsAzy4C+sS0UbvCkAYlwGtg==</SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>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</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnviarLoteRpsEnvio>
